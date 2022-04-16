@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">WordBookProject</string>
+    <string name="_0">0</string>
+    <string name="저장된단어수">저장된 단어 수 :</string>
+    <string name="뒤로가기">뒤로가기</string>
+    <string name="단어">단어</string>
+    <string name="뜻">뜻</string>
+    <string name="추가">추가</string>
+    <string name="저장">저장</string>
+    <string name="이전">이전</string>
+    <string name="다음">다음</string>
+    <string name="목록">목록</string>
+    <string name="삭제">삭제</string>
+    <string name="검색">검색</string>
+    <string name="추가한_단어">추가한 단어</string>
+    <string name="삭제하기">삭제하기</string>
+    <string name="저장된_단어_수">저장된 단어 수 :</string>
+</resources>

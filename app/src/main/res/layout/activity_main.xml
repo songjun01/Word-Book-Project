@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/idWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/단어"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/idMean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/뜻"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.063"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idWord"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <EditText
+        android:id="@+id/idWordEdit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <EditText
+        android:id="@+id/idMeanEdit"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.213"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idWordEdit"
+        app:layout_constraintVertical_bias="0.014" />
+
+    <EditText
+        android:id="@+id/idWordMeView"
+        android:layout_width="410dp"
+        android:layout_height="450dp"
+        android:autofillHints=""
+        android:background="#BBDDF8"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idDelete"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/idEnrollment"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_r"
+        android:onClick="onEnrollmentClicked"
+        android:text="@string/추가"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/idSave"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_o"
+        android:onClick="onSaveClicked"
+        android:text="@string/저장"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.28"
+        app:layout_constraintStart_toEndOf="@+id/idEnrollment"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/idDelete"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_g"
+        android:onClick="onDeleteClicked"
+        android:text="@string/삭제"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idEnrollment"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/idSearch"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_b"
+        android:onClick="onSearchClicked"
+        android:text="@string/검색"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toEndOf="@+id/idDelete"
+        app:layout_constraintTop_toBottomOf="@+id/idEnrollment"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <Button
+        android:id="@+id/idTotal"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_p"
+        android:onClick="onTotalClicked"
+        android:text="@string/목록"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.233"
+        app:layout_constraintStart_toEndOf="@+id/idSearch"
+        app:layout_constraintTop_toBottomOf="@+id/idSave"
+        app:layout_constraintVertical_bias="0.006" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/추가한_단어"
+        android:textColor="#000000"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/idWordMeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idMeanEdit"
+        app:layout_constraintVertical_bias="0.85" />
+
+    <Button
+        android:id="@+id/idDeleteTrue"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_g"
+        android:onClick="onDeleteTrueClicked"
+        android:text="@string/삭제하기"
+        app:layout_constraintBottom_toTopOf="@+id/idWordMeView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.928"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idSearch"
+        app:layout_constraintVertical_bias="0.781" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
